@@ -2,7 +2,10 @@ import React from "react";
 
 function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav
+            className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+            style={{ borderBottom: "5px solid #ffc107" }}
+        >
             <div className="container">
                 <a className="navbar-brand" href="/">
                     Start Bootstrap

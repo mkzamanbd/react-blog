@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import SinglePost from "./SinglePost/SinglePost";
+import Item from "./Item/Item";
 
 export default class Posts extends Component {
     state = {
@@ -33,14 +33,16 @@ export default class Posts extends Component {
         return (
             <div className="col-md-8">
                 <h1 className="my-4">
-                    Page Heading
-                    <small>Secondary Text</small>
+                    <span>React </span>
+                    <small>
+                        A JavaScript library for building user interfaces
+                    </small>
                 </h1>
 
                 {isLoded ? (
                     <div>
                         {postData.map((post) => (
-                            <SinglePost post={post} key={post.id} />
+                            <Item post={post} key={post.id} />
                         ))}
                         <ul className="pagination justify-content-center mb-4">
                             <li className="page-item">
