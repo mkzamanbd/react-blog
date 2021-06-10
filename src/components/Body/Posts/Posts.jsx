@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Skeleton from "@material-ui/lab/Skeleton";
 import Item from "./Item/Item";
 
 export default class Posts extends Component {
@@ -38,6 +39,9 @@ export default class Posts extends Component {
                         A JavaScript library for building user interfaces
                     </small>
                 </h1>
+                <Skeleton variant="text" />
+                <Skeleton variant="circle" width={40} height={40} />
+                <Skeleton variant="rect" width={210} height={118} />
 
                 {isLoded ? (
                     <div>
@@ -59,6 +63,7 @@ export default class Posts extends Component {
                     </div>
                 ) : (
                     <div className="d-flex justify-content-center">
+                        <Skeleton count={5} />
                         <div className="spinner-border text-info" role="status">
                             <span className="sr-only">Loading...</span>
                         </div>
