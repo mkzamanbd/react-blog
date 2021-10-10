@@ -12,7 +12,7 @@ export default class Posts extends Component {
     }
 
     fetchPosts() {
-        fetch("http://demo-laravel.test/api/v1/posts")
+        fetch("http://laravel-practice.test/api/v1/posts")
             .then((res) => {
                 return res.json();
             })
