@@ -7,7 +7,7 @@ function SinglePost() {
     const [isLoded, setIsLoded] = useState({ isLoded: false });
 
     useEffect(() => {
-        fetch("http://laravel-practice.test/api/v1/post?slug=" + params.slug)
+        fetch("https://api.kzaman.me/api/v1/post?slug=" + params.slug)
             .then((res) => {
                 return res.json();
             })
