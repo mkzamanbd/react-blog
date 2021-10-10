@@ -11,7 +11,7 @@ export default class Category extends Component {
     }
 
     fetchCategories() {
-        fetch("http://laravel-practice.test/api/v1/category")
+        fetch("https://api.kzaman.me/api/v1/category")
             .then((res) => {
                 return res.json();
             })
